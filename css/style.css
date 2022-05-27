@@ -1,0 +1,608 @@
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 20px 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 1rem 0.8rem;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+header,
+section,
+footer {
+  padding: 2rem 3rem;
+}
+
+.nav-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-brand_wrapper {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  font-family: "Pacifico", cursive;
+  color: #9346c0;
+}
+
+.nav-brand_image {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+.nav-links {
+  display: inline-block;
+}
+
+.nav-pages {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-pages > li {
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  color: rgb(100, 99, 99);
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Pacifico", cursive;
+}
+
+.nav-pages > li > a {
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: rgb(100, 99, 99);
+}
+
+.nav-pages > li > a:hover {
+  text-decoration: none;
+  color: #9346c0;
+}
+
+.selected {
+  color: #9346c0 !important;
+}
+
+.nav-booking {
+  background: #9346c0;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  font-family: "ubuntu", sans-serif;
+  /* font-family: "Pacifico", cursive; */
+}
+
+.header-main-banner {
+  height: 75vh;
+  width: 100%;
+  background: url("../assets/images/background.jpg") rgba(64, 1, 100, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-main-banner_header {
+  color: white;
+  width: 70%;
+  max-width: 800px;
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: "ubuntu", sans-serif;
+}
+
+.header-main-banner_paragraph {
+  color: white;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.header-main-banner_button-group {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-main-banner_get-started {
+  background: #9346c0;
+  border: #9346c0 solid 5px;
+  transition: all 0.3s ease;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "ubuntu", sans-serif;
+}
+
+.header-main-banner_contact-us {
+  border: #9346c0 solid 5px;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  background: transparent;
+  color: #9346c0;
+}
+
+.header-main-banner_contact-us:hover {
+  cursor: pointer;
+}
+
+.header-main-banner_get-started:hover {
+  background-color: transparent;
+  border: #9346c0 solid 5px;
+  color: #9346c0;
+  cursor: pointer;
+}
+
+.dentist-image {
+  height: 500px;
+}
+
+.aboutus {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-text {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 520px;
+}
+
+.aboutus-text_header {
+  font-family: "Pacifico", cursive;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: rgb(64, 64, 64);
+}
+
+.aboutus-underline {
+  width: 100px;
+  height: 8px;
+  background-color: #9346c0;
+  border-radius: 20px;
+}
+
+.aboutus-paragraph {
+  font-family: "ubuntu", sans-serif;
+  font-size: 1rem;
+  line-height: 30px;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.aboutus-paragraph > span {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  color: #9346c0;
+  margin-right: 4px;
+}
+
+.aboutus-button_see-more {
+  background: #9346c0;
+  color: white;
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  color: white;
+  font-family: "ubuntu", sans-serif;
+  text-decoration: none;
+}
+
+.our-services {
+  /* height: 500px; */
+  background: url("./../assets/images/tools.png"), rgba(0, 0, 0, 0.523);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.our-services_wrap {
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  height: 100%;
+}
+
+.our-services_heading {
+  font-family: "Pacifico", cursive;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.our-services_underline {
+  width: 100px;
+  height: 8px;
+  background-color: #9346c0;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.our-services_service-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: baseline;
+}
+
+.our-sercies_service-wrap {
+  display: inline-block;
+}
+
+.our-sercies_service-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.our-sercies_service-list-item > img {
+  /* height: 36px;
+  width: 50px; */
+}
+
+.our-sercies_service-list-item > p {
+  color: white;
+  font-family: "ubuntu", sans-serif;
+  margin-top: 0.5rem;
+}
+
+.our-team {
+  width: 80%;
+  margin: auto;
+}
+
+.our-team_header {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: rgb(66, 66, 66);
+}
+
+.our-team_underline {
+  width: 100px;
+  margin: auto;
+  height: 8px;
+  background-color: #9346c0;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.our-team_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.card1 {
+  background: url("./../assets/images/doc\ 1.png");
+  background-size: cover;
+  height: 300px;
+  display: inline-block;
+  width: 250px;
+}
+
+.card2 {
+  background: url("./../assets/images/doc\ 2.png");
+  background-size: cover;
+  height: 300px;
+  width: 250px;
+  display: inline-block;
+}
+
+.card3 {
+  background: url("./../assets/images/doc\ 3.png");
+  background-size: cover;
+  height: 300px;
+  display: inline-block;
+  width: 250px;
+}
+
+.card-header {
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  text-align: center;
+  font-family: "ubuntu", sans-serif;
+  font-style: italic;
+  color: gray;
+}
+
+.footer {
+  background: url("./../assets/images/footer.png") rgba(0, 0, 0, 0.783);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: 20vh; */
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-wrap {
+  padding: 3rem 3rem;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_brand-wrap-inline {
+  display: inline-block;
+  max-width: 400px;
+}
+
+.footer_brand-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.footer_brand-image {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.footer_brand-header {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  font-family: "Pacifico", cursive;
+  color: #9346c0;
+  margin: 0;
+  display: inline-block;
+}
+
+.footer_brand-paragraph {
+  font-family: "ubuntu", sans-serif;
+  color: white;
+  max-width: 90%;
+  line-height: 150%;
+}
+
+.footer_opening-hours-header {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.opening-row {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+
+.opening-day,
+.opening-hour {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: "ubuntu", sans-serif;
+  color: white;
+}
+
+.opening-day {
+  color: #c787ec;
+}
+
+.footer_quick-links {
+  min-width: 250px;
+}
+
+.quick-links-header {
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.quick-link {
+  display: block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  font-family: "ubuntu", sans-serif;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.quick-link:hover {
+  color: #9346c0;
+}
+
+/* About page */
+
+.header-about-banner {
+  height: 15vh;
+  width: 100%;
+  background: rgba(64, 1, 100, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.preformance {
+  background-color: #9346c0;
+  padding: 3rem 5rem;
+}
+
+.performance-wrap {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 0 2rem; */
+}
+
+.component > img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.slogan {
+  font-family: "Pacifico", cursive;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.number {
+  margin-bottom: 0.2rem;
+  font-size: 2rem;
+  font-family: "ubuntu", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.contact-us-text_header {
+  font-family: "Pacifico", cursive;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: rgb(64, 64, 64);
+  text-align: center;
+}
+
+.contact-us-underline {
+  width: 100px;
+  height: 8px;
+  background-color: #9346c0;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.about-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact-wrap {
+  /* width: 80%; */
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.details-wrap_wrap {
+  display: inline-block;
+}
+
+.details-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 40%; */
+}
+
+.contact-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 2rem;
+}
+
+.contact-slogan {
+  font-family: "ubuntu", sans-serif;
+  color: rgb(75, 74, 74);
+}
+
+.form {
+  /* width: 50%; */
+}
+
+.form-header {
+  text-align: center;
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  color: #5c5c5c;
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  width: 50%;
+  background-color: red;
+  display: flex;
+  /* text-align: center; */
+}
+
+.form-field-input {
+  font-family: "ubuntu", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: rgb(205, 205, 205);
+  padding: 0.8rem 2rem;
+}
+
+.button-subscribe {
+  background-color: #9346c0;
+  color: white;
+  font-family: "ubuntu", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
